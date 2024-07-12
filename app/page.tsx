@@ -39,22 +39,22 @@ export default function Home() {
                             Alejandro Rodriguez
                         </h1>
                         <p>
-                            Web Developer
+                            Full-Stack Developer
                             <span>
                                 suppity sup sup
                             </span>
 
                         </p>
                         <div className="call-to-action">
-                            <a href="#" className="button black">
-                                View Resume
+                            <a href="https://github.com/st0rmo" className="button black">
+                                Github
                             </a>
                             <a href="#" className="button white">
-                                Contact Me
+                                Sum else
                             </a>
                         </div>
                         <div className="social-links">
-                            <a href="#">
+                            <a href="https://github.com/st0rmo">
                                 <Image src="/imgs/github.png" alt="github" width = "50" height = "50"/>
                             </a>
                         </div>
@@ -79,6 +79,10 @@ export default function Home() {
                         alt="VS Code" width="128" height="128"/>
                         <Image src="/imgs/python.png"
                         alt="Python" width="128" height="128"/>
+                        <Image src="/imgs/java.png"
+                        alt="Java" width="128" height="128"/>
+                        <Image src="/imgs/c++.png"
+                        alt="C++" width="128" height="128"/>
                         <Image src="/imgs/html.png"
                         alt="HTML" width="128" height="128"/>
                         <Image src="/imgs/css.png"
@@ -91,6 +95,20 @@ export default function Home() {
                         alt="VS Code" width="128" height="128"/>
                         <Image src="/imgs/python.png"
                         alt="Python" width="128" height="128"/>
+                        <Image src="/imgs/java.png"
+                        alt="Java" width="128" height="128"/>
+                        <Image src="/imgs/c++.png"
+                        alt="C++" width="128" height="128"/>
+                        <Image src="/imgs/html.png"
+                        alt="HTML" width="128" height="128"/>
+                        <Image src="/imgs/css.png"
+                        alt="CSS" width="128" height="128"/>
+                        <Image src="/imgs/javascript.png"
+                        alt="JS" width="128" height="128"/>
+                        <Image src="/imgs/azure.png"
+                        alt="Azure" width="128" height="128"/>
+                        <Image src="/imgs/vscode.png"
+                        alt="VS Code" width="128" height="128"/>
                     </div>
                 </div>
             </section>

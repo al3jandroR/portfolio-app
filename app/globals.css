@@ -24,7 +24,7 @@ body {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 20px;
-	padding-bottom:1000px;
+	padding-bottom:100px;
 }
 
 a {
@@ -255,7 +255,7 @@ h1 {
 			position: absolute;
 			white-space: nowrap;
 			will-change: transform;
-			animation: marquee 32s linear infinite;
+			animation: marquee 40s linear infinite;
 			display: flex;
 			gap: 10px;
 		}
@@ -267,7 +267,7 @@ h1 {
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-40%);
+		transform: translateX(-50%);
 	}
 }
 
