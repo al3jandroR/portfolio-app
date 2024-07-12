@@ -1,113 +1,222 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      <>
+        <header>
+            <a href="#" className = "logo-holder">
+                <div className="logo">L</div>
+                <div className="logo-text">Portfolio Website</div>
+            </a>
+            <nav>
+                <ul id="menu" className = {menuOpen ? "active" : ""}>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#" className="button">Contact Me</a></li>
+                </ul>
+                <a href="#" className="mobile-toggle" onClick={toggleMobileMenu}>
+                    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                      </svg>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section className="hero container">
+                <div className="hero-blue">
+                    <div>
+                        <h1><small>Hi I'm</small>
+                            Alejandro Rodriguez
+                        </h1>
+                        <p>
+                            Web Developer
+                            <span>
+                                suppity sup sup
+                            </span>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+                        </p>
+                        <div className="call-to-action">
+                            <a href="#" className="button black">
+                                View Resume
+                            </a>
+                            <a href="#" className="button white">
+                                Contact Me
+                            </a>
+                        </div>
+                        <div className="social-links">
+                            <a href="#">
+                                <img src="./imgs/github.png" alt="github"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="hero-yellow">
+                    <img src="" width="100%"/>
+                </div>
+            </section>
+            <section className="logos container">
+                <div className="marquee">
+                    <div className="track">
+                        <img src="./imgs/html.png"
+                        alt="HTML" width="128"/>
+                        <img src="./imgs/css.png"
+                        alt="CSS" width="128"/>
+                        <img src="./imgs/javascript.png"
+                        alt="JS" width="128"/>
+                        <img src="./imgs/azure.png"
+                        alt="Azure" width="128"/>
+                        <img src="./imgs/vscode.png"
+                        alt="VS Code" width="128"/>
+                        <img src="./imgs/python.png"
+                        alt="Python" width="128"/>
+                        <img src="./imgs/html.png"
+                        alt="HTML" width="128"/>
+                        <img src="./imgs/css.png"
+                        alt="CSS" width="128"/>
+                        <img src="./imgs/javascript.png"
+                        alt="JS" width="128"/>
+                        <img src="./imgs/azure.png"
+                        alt="Azure" width="128"/>
+                        <img src="./imgs/vscode.png"
+                        alt="VS Code" width="128"/>
+                        <img src="./imgs/python.png"
+                        alt="Python" width="128"/>
+                        <img src="./imgs/html.png"
+                        alt="HTML" width="128"/>
+                        <img src="./imgs/css.png"
+                        alt="CSS" width="128"/>
+                        <img src="./imgs/javascript.png"
+                        alt="JS" width="128"/>
+                        <img src="./imgs/azure.png"
+                        alt="Azure" width="128"/>
+                        <img src="./imgs/vscode.png"
+                        alt="VS Code" width="128"/>
+                        <img src="./imgs/python.png"
+                        alt="Python" width="128"/>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" className="skills container">
+                <h2>
+                    <small>About Me</small>
+                    Skills
+                </h2>
+                <div className="holder-blue">
+                    <div className="left-column">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Vue</li>
+                        </ul>
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Python</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                    <div className="right-column">
+                        <h3> A bit about me</h3>
+                        <p>
+                            suppity sup sup
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="work-experience container">
+                <h2>
+                    <small>Recent</small>
+                    Work Experience
+                </h2>
+                <div className="jobs">
+                    <article>
+                        <figure>
+                            <div>
+                                <img src="./imgs/workplace-1.jpg"
+                                alt="Workplace 1"
+                                width="100%"/>
+                                <figcaption>Workplace 1</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Workplace 1</h3>
+                        <div>2020</div>
+                        <p>example description</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <img src="./imgs/workplace-2.jpg"
+                                alt="Workplace 2"
+                                width="100%"/>
+                                <figcaption>Workplace 2</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Workplace 2</h3>
+                        <div>2020</div>
+                        <p>example description</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <img src="./imgs/workplace-3.jpg"
+                                alt="Workplace 3"
+                                width="100%"/>
+                                <figcaption>Workplace 3</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Workplace 3</h3>
+                        <div>2020</div>
+                        <p>example description</p>
+                    </article>
+                </div>
+            </section>
+            <section id="projects" className="bento">
+                <h2>
+                    <small>Previous</small>
+                    Projects
+                </h2>
+                <div className="bento-grid">
+                    <a href="#" className="bento-item">
+                        <img src="./imgs/bento-1.jpg"
+                        alt="bento1" width="100%"/>
+                    </a>
+                    <a href="#" className="bento-item">
+                        <img src="./imgs/bento-2.jpg"
+                        alt="bento2" width="100%"/>
+                    </a>
+                    <a href="#" className="bento-item">
+                        <img src="./imgs/bento-3.jpg"
+                        alt="bento3" width="100%"/>
+                    </a>
+                    <a href="#" className="bento-item">
+                        <img src="./imgs/bento-4.jpg"
+                        alt="bento4" width="100%"/>
+                    </a>
+                    <a href="#" className="bento-item">
+                        <img src="./imgs/bento-5.jpg"
+                        alt="bento5" width="100%"/>
+                    </a>
+                    <a href="#" className="bento-item">
+                        <img src="./imgs/bento-6.jpg"
+                        alt="bento6" width="100%"/>
+                    </a>
+                </div>
+            </section>
+        </main>
+      </>
   );
 }
