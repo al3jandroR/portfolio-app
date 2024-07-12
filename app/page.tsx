@@ -61,7 +61,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="hero-yellow">
-                    <Image src="/imgs/github.png" alt="temp Image" width = "300" height = "300"/>
+                    <Image src="/imgs/cat.png" alt="temp Image" width = "300" height = "300"/>
                 </div>
             </section>
             <section className="logos container">
