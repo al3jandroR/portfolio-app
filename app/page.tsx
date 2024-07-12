@@ -26,7 +26,7 @@ export default function Home() {
                 </ul>
                 <a href="#" className="mobile-toggle" onClick={toggleMobileMenu}>
                     <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                        <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14"/>
                       </svg>
                 </a>
             </nav>
@@ -35,7 +35,7 @@ export default function Home() {
             <section className="hero container">
                 <div className="hero-blue">
                     <div>
-                        <h1><small>Hi I'm</small>
+                        <h1><small>Hi I am</small>
                             Alejandro Rodriguez
                         </h1>
                         <p>
@@ -55,54 +55,42 @@ export default function Home() {
                         </div>
                         <div className="social-links">
                             <a href="#">
-                                <img src="./imgs/github.png" alt="github"/>
+                                <Image src="/imgs/github.png" alt="github" width = "50" height = "50"/>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="hero-yellow">
-                    <img src="" width="100%"/>
+                    <Image src="/imgs/github.png" alt="temp Image" width = "300" height = "300"/>
                 </div>
             </section>
             <section className="logos container">
                 <div className="marquee">
                     <div className="track">
-                        <img src="./imgs/html.png"
-                        alt="HTML" width="128"/>
-                        <img src="./imgs/css.png"
-                        alt="CSS" width="128"/>
-                        <img src="./imgs/javascript.png"
-                        alt="JS" width="128"/>
-                        <img src="./imgs/azure.png"
-                        alt="Azure" width="128"/>
-                        <img src="./imgs/vscode.png"
-                        alt="VS Code" width="128"/>
-                        <img src="./imgs/python.png"
-                        alt="Python" width="128"/>
-                        <img src="./imgs/html.png"
-                        alt="HTML" width="128"/>
-                        <img src="./imgs/css.png"
-                        alt="CSS" width="128"/>
-                        <img src="./imgs/javascript.png"
-                        alt="JS" width="128"/>
-                        <img src="./imgs/azure.png"
-                        alt="Azure" width="128"/>
-                        <img src="./imgs/vscode.png"
-                        alt="VS Code" width="128"/>
-                        <img src="./imgs/python.png"
-                        alt="Python" width="128"/>
-                        <img src="./imgs/html.png"
-                        alt="HTML" width="128"/>
-                        <img src="./imgs/css.png"
-                        alt="CSS" width="128"/>
-                        <img src="./imgs/javascript.png"
-                        alt="JS" width="128"/>
-                        <img src="./imgs/azure.png"
-                        alt="Azure" width="128"/>
-                        <img src="./imgs/vscode.png"
-                        alt="VS Code" width="128"/>
-                        <img src="./imgs/python.png"
-                        alt="Python" width="128"/>
+                        <Image src="/imgs/html.png"
+                        alt="HTML" width="128" height="128"/>
+                        <Image src="/imgs/css.png"
+                        alt="CSS" width="128" height="128"/>
+                        <Image src="/imgs/javascript.png"
+                        alt="JS" width="128" height="128"/>
+                        <Image src="/imgs/azure.png"
+                        alt="Azure" width="128" height="128"/>
+                        <Image src="/imgs/vscode.png"
+                        alt="VS Code" width="128" height="128"/>
+                        <Image src="/imgs/python.png"
+                        alt="Python" width="128" height="128"/>
+                        <Image src="/imgs/html.png"
+                        alt="HTML" width="128" height="128"/>
+                        <Image src="/imgs/css.png"
+                        alt="CSS" width="128" height="128"/>
+                        <Image src="/imgs/javascript.png"
+                        alt="JS" width="128" height="128"/>
+                        <Image src="/imgs/azure.png"
+                        alt="Azure" width="128" height="128"/>
+                        <Image src="/imgs/vscode.png"
+                        alt="VS Code" width="128" height="128"/>
+                        <Image src="/imgs/python.png"
+                        alt="Python" width="128" height="128"/>
                     </div>
                 </div>
             </section>
