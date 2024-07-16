@@ -41,7 +41,7 @@ export default function Home() {
                         <p>
                             Full-Stack Developer
                             <span>
-                                suppity sup sup
+                                
                             </span>
 
                         </p>
@@ -49,9 +49,9 @@ export default function Home() {
                             <a href="https://github.com/st0rmo" className="button black">
                                 Github
                             </a>
-                            <a href="#" className="button white">
-                                Sum else
-                            </a>
+                            {/*<a href="#" className="button white">
+                                View Resume
+                            </a>*/}
                         </div>
                         <div className="social-links">
                             <a href="https://github.com/st0rmo">
@@ -190,7 +190,7 @@ export default function Home() {
                     </article>
                 </div>
             </section>*/}
-            <section id="projects" className="bento">
+            {/*<section id="projects" className="bento">
                 <h2>
                     <small>Previous</small>
                     Projects
@@ -221,7 +221,7 @@ export default function Home() {
                         alt="bento6" width="100%"/>
                     </a>
                 </div>
-            </section>
+            </section>*/}
         </main>
       </>
   );
