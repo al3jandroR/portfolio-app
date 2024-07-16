@@ -138,12 +138,12 @@ export default function Home() {
                     <div className="right-column">
                         <h3> A bit about me</h3>
                         <p>
-                            suppity sup sup
+                            New software developer with a passion for learning and creating. I have experience with a variety of programming languages and frameworks. I am always looking for new opportunities to learn and grow as a developer.
                         </p>
                     </div>
                 </div>
             </section>
-            <section className="work-experience container">
+            {/*<section className="work-experience container">
                 <h2>
                     <small>Recent</small>
                     Work Experience
@@ -189,7 +189,7 @@ export default function Home() {
                         <p>example description</p>
                     </article>
                 </div>
-            </section>
+            </section>*/}
             <section id="projects" className="bento">
                 <h2>
                     <small>Previous</small>
@@ -197,27 +197,27 @@ export default function Home() {
                 </h2>
                 <div className="bento-grid">
                     <a href="#" className="bento-item">
-                        <img src="./imgs/bento-1.jpg"
+                        <img src="#"
                         alt="bento1" width="100%"/>
                     </a>
                     <a href="#" className="bento-item">
-                        <img src="./imgs/bento-2.jpg"
+                        <img src="#"
                         alt="bento2" width="100%"/>
                     </a>
                     <a href="#" className="bento-item">
-                        <img src="./imgs/bento-3.jpg"
+                        <img src="#"
                         alt="bento3" width="100%"/>
                     </a>
                     <a href="#" className="bento-item">
-                        <img src="./imgs/bento-4.jpg"
+                        <img src="#"
                         alt="bento4" width="100%"/>
                     </a>
                     <a href="#" className="bento-item">
-                        <img src="./imgs/bento-5.jpg"
+                        <img src="#"
                         alt="bento5" width="100%"/>
                     </a>
                     <a href="#" className="bento-item">
-                        <img src="./imgs/bento-6.jpg"
+                        <img src="#"
                         alt="bento6" width="100%"/>
                     </a>
                 </div>
