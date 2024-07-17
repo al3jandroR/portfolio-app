@@ -61,7 +61,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="hero-yellow">
-                    <Image src="/imgs/csu.png" alt="CSU Image" width={420} height={340}/>
+                    <Image src="/imgs/csu.png" alt="CSU Image" width={440} height={340}/>
                 </div>
             </section>
             <section className="logos container">
