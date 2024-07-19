@@ -46,7 +46,7 @@ export default function Home() {
 
                         </p>
                         <div className="call-to-action">
-                            <a href="https://github.com/st0rmo" className="button black">
+                            <a href="https://github.com/al3jandroR" className="button black">
                                 Github
                             </a>
                             {/*<a href="#" className="button white">
@@ -54,7 +54,7 @@ export default function Home() {
                             </a>*/}
                         </div>
                         <div className="social-links">
-                            <a href="https://github.com/st0rmo">
+                            <a href="https://github.com/al3jandroR">
                                 <Image src="/imgs/github.png" alt="github" width = "50" height = "50"/>
                             </a>
                         </div>
