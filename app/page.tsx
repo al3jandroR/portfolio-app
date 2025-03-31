@@ -21,7 +21,7 @@ export default function Home() {
                 <ul id="menu" className = {menuOpen ? "active" : ""}>
                     <li><a href="#">Home</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="https://github.com/st0rmo">Projects</a></li>
+                    <li><a href="https://github.com/al3jandroR">Projects</a></li>
                     <li><a href="mailto:a.rodriguez727@icloud.com" className="button">Contact Me</a></li>
                 </ul>
                 <a href="#" className="mobile-toggle" onClick={toggleMobileMenu}>
